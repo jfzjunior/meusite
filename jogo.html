@@ -1,0 +1,58 @@
+ <!--
+ Uma página simples para compartilhar pensamentos e ideias,
+ com redirecionamento para uma página de formulário,
+ e redirecionamento para uma página que contenha fotos de paisagens.
+ -->
+
+<doctype htm5>
+<hmtl>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha #</title>
+    </head>
+
+    <body>
+        <div id="topo">
+            <a id="link0" href="index.html">Jogo da Velha</a><img src="img/tag.png" style="height: 35;right: auto;">
+        </div>
+        <!--home | pensamentos | compartilhe seu pensamento conosco | imagens para suas postagens | postagens prontas-->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li>|</li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>|</li>
+                <li><a href="jogo.html">Jogo</a></li>
+            </ul>
+        </nav>
+        
+        <div id="corpo">
+            <div class="container">
+                <h2>Jogo da Velha</h2>
+                <div id="board" class="board">
+                    <div class="cell" onclick="playerMove(0)"></div>
+                    <div class="cell" onclick="playerMove(1)"></div>
+                    <div class="cell" onclick="playerMove(2)"></div>
+                    <div class="cell" onclick="playerMove(3)"></div>
+                    <div class="cell" onclick="playerMove(4)"></div>
+                    <div class="cell" onclick="playerMove(5)"></div>
+                    <div class="cell" onclick="playerMove(6)"></div>
+                    <div class="cell" onclick="playerMove(7)"></div>
+                    <div class="cell" onclick="playerMove(8)"></div>
+                </div>
+                <button onclick="resetGame()">Resetar Jogo</button><br><br>
+                
+                <div id="status">É a vez do jogador X</div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+
+        <footer> 2024 Meu Site</footer>
+
+    </body>
+</hmtl>
+ </doctype>

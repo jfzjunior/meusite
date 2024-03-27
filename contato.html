@@ -1,0 +1,60 @@
+  <!--
+ Uma página simples para compartilhar pensamentos e ideias,
+ com redirecionamento para uma página de formulário,
+ e redirecionamento para uma página que contenha fotos de paisagens.
+ -->
+
+<doctype htm5>
+    <hmtl>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <title>Jogo da Velha #</title>
+        </head>
+    
+        <body>
+            <div id="topo">
+                <a id="link0" href="index.html">Jogo da Velha</a><img src="img/tag.png" style="height: 35;right: auto;">
+            </div>
+            <!--home | pensamentos | compartilhe seu pensamento conosco | imagens para suas postagens | postagens prontas-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>|</li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li>|</li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>|</li>
+                    <li><a href="jogo.html">Jogo</a></li>
+                </ul>
+            </nav>
+            
+            <div id="corpo">
+
+
+                <nav id="formulario">
+                    <form method="post" action="enviado.html">
+                        <label for="Autor">Remetente: </label><br>
+                        <input type="text" id="nome" nome="nome" required><br><br>
+                
+                        <label for="whatsapp">Whatsapp de contato: </label><br>
+                        <input type="tel" id="whatsapp" nome="whatsapp" required><br><br>
+                
+                        <label for="email">e-mail de contato: </label><br>
+                        <input type="email" id="email" nome="email" required><br><br>
+                
+                        <label for="mensagem">Assunto: </label><br>
+                        <textarea id="mensagem" nome="mensagem" rows="3" required></textarea><br><br><br>
+                
+                        <button type="submit" id="envio"> Enviar </button>
+                
+                    </form>
+                </nav>
+            </div>
+    
+            <footer> 2024 Meu Site</footer>
+    
+        </body>
+    </hmtl>
+</doctype>
+     
